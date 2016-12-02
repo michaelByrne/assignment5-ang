@@ -82,8 +82,8 @@
       <file leaf-file-name="signup.template.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../Assignment5/src/public/signup.template.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+            <state relative-caret-position="285">
+              <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
               <folding>
                 <element signature="n#style#0;n#fieldset#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#legend#0;n#fieldset#0;n#!!top" expanded="true" />
@@ -326,12 +326,12 @@
       <option name="presentableId" value="Default" />
       <updated>1480046413597</updated>
       <workItem from="1480046414796" duration="920000" />
-      <workItem from="1480119127805" duration="25411000" />
+      <workItem from="1480119127805" duration="25640000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26331000" />
+    <option name="totallyTimeSpent" value="26560000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="689" y="-974" width="1280" height="773" extended-state="0" />
@@ -580,8 +580,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../Assignment5/src/public/signup.template.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+        <state relative-caret-position="285">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
           <folding>
             <element signature="n#style#0;n#fieldset#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#legend#0;n#fieldset#0;n#!!top" expanded="true" />

@@ -7,10 +7,18 @@
            required
            minlength="1"
            ng-maxlength="10">
+    <span
+            ng-if="(regForm.username.$error.minlength || regForm.username.$error.required) && regForm.username.$touched">
+            First name can't be blank
+          </span>
     <br>
     <input style="color: black;" type="text" name="last" placeholder="Last Name"
            ng-model="signUp.last"
            required>
+     <span
+             ng-if="(regForm.last.$error.minlength || regForm.last.$error.required) && regForm.last.$touched">
+            Last name can't be blank
+          </span>
     <br>
     <input type="email" name="email" placeholder="Email"
            ng-model="reg.user.email"
@@ -30,14 +38,14 @@
     <input type="text" name="favorite" placeholder="Favorite menu item"
            ng-model="signUp.favorite"
            required
-          >
+    >
     <br>
 
 
     <button
             ng-disabled="regForm.$invalid"
-            ng-click="signUp.submit()">Submit</button>
-
+            ng-click="signUp.submit()">Submit
+    </button>
 
 
     <div style="margin-top: 10px;">
