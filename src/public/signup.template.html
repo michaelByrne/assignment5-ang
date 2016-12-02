@@ -5,8 +5,8 @@
     <input style="color: black;" type="text" name="username" placeholder="Pick a username"
            ng-model="signUp.username"
            required
-           minlength="0"
-           ng-maxlength="100">
+           minlength="5"
+           ng-maxlength="10">
           <span
                   ng-if="(regForm.username.$error.minlength || regForm.username.$error.required) && regForm.username.$touched">
             Username must be at least 4 characters long
@@ -15,12 +15,27 @@
             Username must not be longer than 10 characters
           </span>
     <br>
+    <input type="email" name="email" placeholder="Email"
+           ng-model="reg.user.email"
+           required>
+          <span ng-if="regForm.email.$invalid && regForm.email.$touched">
+            Must be a valid email address: handle@domain format
+          </span>
+    <br>
 
+    <input type="text" name="phone" placeholder="Phone ###-###-####"
+           ng-model="reg.user.phone"
+           pattern="(\d{3})-(\d{3})-(\d{4})">
+          <span ng-if="regForm.phone.$invalid && regForm.phone.$touched">
+            Phone must be in the format ###-###-####.
+          </span>
+    <br>
     <input type="text" name="favorite" placeholder="Favorite menu item"
            ng-model="signUp.favorite"
            required
           >
     <br>
+
 
     <button
             ng-disabled="regForm.$invalid"
