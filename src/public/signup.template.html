@@ -2,18 +2,15 @@
   <legend style="color: black;">Registration</legend>
   <form name='regForm' novalidate style="color: black">
 
-    <input style="color: black;" type="text" name="username" placeholder="Pick a username"
+    <input style="color: black;" type="text" name="username" placeholder="First Name"
            ng-model="signUp.username"
            required
-           minlength="5"
+           minlength="1"
            ng-maxlength="10">
-          <span
-                  ng-if="(regForm.username.$error.minlength || regForm.username.$error.required) && regForm.username.$touched">
-            Username must be at least 4 characters long
-          </span>
-          <span ng-if="regForm.username.$error.maxlength && regForm.username.$touched">
-            Username must not be longer than 10 characters
-          </span>
+    <br>
+    <input style="color: black;" type="text" name="last" placeholder="Last Name"
+           ng-model="signUp.last"
+           required>
     <br>
     <input type="email" name="email" placeholder="Email"
            ng-model="reg.user.email"
